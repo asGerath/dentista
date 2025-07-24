@@ -1,6 +1,7 @@
 .layout__keyFeature{
     max-width: 1500px;
     padding: 0 5%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -26,7 +27,7 @@
     & > .keyFeature__container{
         display: grid;
         justify-content: space-between;
-        grid-template-columns: repeat(3, 25vw);
+        grid-template-columns: repeat(3, 384px);
         /* grid-template-columns: repeat(auto-fit, minmax(384px, 1fr)); */
         /* grid-template-rows:repeat(auto-fit, minmax(340px, 1fr)) ; */
         gap: 2rem;
@@ -58,7 +59,7 @@
         }
     }
     & > .keyFeature__container{
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 }
@@ -67,6 +68,7 @@
     .layout__keyFeature{
     max-width: 1500px;
     padding: 0 5%;
+    margin: 5rem auto;
     & > .keyFeature__header {
         & > span {
             bottom: 0;

@@ -1,22 +1,25 @@
 <header class="layout__navbar">
+    <div class="navbar__content">
 
-    <figure>
-        <img class="w-100" src="/logo-Dentics.webp" alt="">
-    </figure>
-
-
-    <nav>
-
-        <ul>
-            <li *ngFor="let item of navItems" class="navbar__item">
-                <a [href]="item.target" class="fz-16">{{ item.label }}</a>
-            </li>
-        </ul>
-
-        <a class="navbar__btn fz-16" [href]="ctaButton.target">
-            {{ctaButton.label}}
-        </a>
-
-    </nav>
-
+        
+        <figure>
+            <img class="w-100" src="/logo-Dentics.webp" alt="">
+        </figure>
+        
+        
+        <nav>
+            
+            <ul>
+                <li *ngFor="let item of navItems" class="navbar__item">
+                    <a [href]="item.target" class="fz-16">{{ item.label }}</a>
+                </li>
+            </ul>
+            
+            <a class="navbar__btn fz-16" [href]="ctaButton.target">
+                {{ctaButton.label}}
+            </a>
+            
+        </nav>
+        
+    </div>
 </header>

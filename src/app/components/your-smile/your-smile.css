@@ -1,18 +1,22 @@
 .layout__yourSmile{
     background-color: var(--Primary);
-    padding: 0 5%;
-    text-align: center;
-    height: clamp( 350px, 32.03125vw, 492px);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    & > a{
-        width: fit-content;
-        text-decoration: none;
-        border: 1px solid var(--white);
-        padding: 1rem 2rem;
-        border-radius: 16px;
+    & > .yourSmile__content{
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 5%;
+        text-align: center;
+        height: clamp( 350px, 32.03125vw, 492px);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        & > a{
+            width: fit-content;
+            text-decoration: none;
+            border: 1px solid var(--white);
+            padding: 1rem 2rem;
+            border-radius: 16px;
+        }
     }
 }
