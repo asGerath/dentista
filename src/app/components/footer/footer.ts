@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.css'
 })
 export class Footer {
-
+  mail = 'hello@reallygreatsite.com'
 }

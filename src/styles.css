@@ -27,6 +27,9 @@ html{
 .fz-h1{
     font-size: clamp(32px, 3.6458333333333335vw, 56px);
 }
+.fz-14{
+    font-size: clamp(12px, 0.9114583333333334vw, 14px);
+}
 .fz-16{
     font-size: clamp(14px, 1.0416666666666667vw, 16px);
 }
@@ -42,6 +45,9 @@ html{
 .fz-24{
     font-size: clamp(18px, 1.5625vw, 24px);
 }
+.fz-28{
+    font-size: clamp(22px, 1.8229166666666667vw, 28px);
+}
 .fz-36{
     font-size: clamp(28px, 2.34375vw, 36px);
 }
@@ -49,9 +55,18 @@ html{
     font-size: clamp(26px, 2.734375vw, 42px);
 }
 .fz-48{
-    font-size: clamp(30px, 3.125vw, 48px);
+    font-size: clamp(28px, 3.125vw, 48px);
+}
+.fz-56{
+    font-size: clamp(35px, 2.95vw, 56px);
+}
+.fz-60{
+    font-size: clamp(40px, 3.125vw, 60px);
 }
 
+.fw-700{
+    font-weight: 700;
+}
 .fw-600{
     font-weight: 600;
 }
