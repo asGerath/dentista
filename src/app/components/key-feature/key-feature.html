@@ -1,0 +1,14 @@
+<section class="layout__keyFeature">
+    <header>
+        <h3>What Makes Us More Special</h3>
+    </header>
+    <div class="keyFeature__container">
+        <div *ngFor="let item of keyItems">
+            <figure>
+                <img class="w-100" [src]="item.img" alt="">
+            </figure>
+            <h5 class="fz-24 c-black-t"> {{item.title}} </h5>
+            <p class="c-Gray2 fz-16"> {{item.text}} </p>
+        </div>
+    </div>
+</section>

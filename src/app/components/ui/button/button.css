@@ -1,0 +1,25 @@
+.g__btn{
+    display: block;
+    width: fit-content;
+    font-weight: 600;
+    text-decoration: none;
+    padding-top: clamp(.6rem, .8rem, .8rem);
+    padding-bottom: clamp(.6rem, .8rem, .8rem);
+    padding-right: clamp(20px, 2.0833333333333335vw, 32px);
+    padding-left: clamp(20px, 2.0833333333333335vw, 32px);
+    border-radius: 8px;
+    &.primary{
+        background-color: var(--Primary);
+        color: var(--white);
+        border: 1px solid var(--Primary);
+    }
+    &.secondary{
+        color: var(--Gray);
+        border: 1px solid var(--Gray);
+        background-color: var(--white);
+    }
+}
+
+@media screen and (max-width: 991px){
+
+}

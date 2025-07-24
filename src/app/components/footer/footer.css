@@ -1,0 +1,17 @@
+.layout__footer{
+    background-color: var(--Primary);
+    
+    & > .footer__content{
+        height: clamp(444px, 28.90625vw, 444px);
+    }
+    
+
+    & > .footer__copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Cian);
+        text-align: center;
+        height: clamp(64px, 4.166666666666667vw, 64px);
+    }
+}

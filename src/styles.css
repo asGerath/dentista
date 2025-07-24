@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --Primary:#516EFF;
+    --Yellow:#FFD700;
+    --Gray:#52525B;
+    --Cian:#216583;
+    --white:white;
+    --Gray2:#777777;
+    --Bg__gray:#F8FAFC;
+    --Black__text:#18181B;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    font-size: 16px;
+}
+
+.ff-Iner{
+    font-family: "Inter", sans-serif;
+}
+
+
+.fz-h1{
+    font-size: clamp(32px, 3.6458333333333335vw, 56px);
+}
+.fz-16{
+    font-size: clamp(14px, 1.0416666666666667vw, 16px);
+}
+.fz-18{
+    font-size: clamp(16px, 1.171875vw, 18px);
+}
+.fz-20{
+    font-size: clamp(18px, 1.3020833333333333vw, 20px);
+}
+.fz-22{
+    font-size: clamp(16px, 1.4322916666666667vw, 22px);
+}
+.fz-24{
+    font-size: clamp(18px, 1.5625vw, 24px);
+}
+.fz-36{
+    font-size: clamp(28px, 2.34375vw, 36px);
+}
+.fz-42{
+    font-size: clamp(26px, 2.734375vw, 42px);
+}
+.fz-48{
+    font-size: clamp(30px, 3.125vw, 48px);
+}
+
+.fw-600{
+    font-weight: 600;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-400{
+    font-weight: 400;
+}
+
+.c-yellow{
+    color: var(--Yellow);
+}
+.c-Gray2{
+    color: var(--Gray2);
+}
+.c-Gray{
+    color: var(--Gray);
+}
+.c-black-t{
+    color: var(--Black__text);
+}
+.c-white{
+    color: var(--white);
+}
+
+
+.w-100{
+    width:100%;
+}

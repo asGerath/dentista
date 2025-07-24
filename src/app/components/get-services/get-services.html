@@ -1,0 +1,18 @@
+<section class="layout__getServices">
+    <header>
+        <h3 class="fz-42">
+            How to get our service? 
+        </h3>
+        <p class="fz-22 fw-500">Just follow these simple steps</p>
+    </header>
+    
+    <div class="getServices__content">
+        <div *ngFor="let item of servicesItems">
+            <figure>
+                <img [src]="item.icon" alt="">
+            </figure>
+            <p class="c-Gray2 fw-600" [innerHTML]="item.text">
+            </p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,154 @@
+    .layout__always {
+        max-width: 1500px;
+        display: flex;
+        flex-wrap: wrap;
+        height: clamp(777px, 45.572916666666664vw, 700px);
+
+        &>.always__a {
+            flex: 2 1 300px;
+            background-color: var(--Bg__gray);
+            padding-left: 5%;
+            border-radius: 0 0 136px 0;
+
+            &>.a__header {
+                height: 35%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-bottom: 1px solid var(--Primary);
+            }
+
+            &>figure {
+                height: 65%;
+                padding: 2rem;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &>.always__b {
+            flex: 3 1 300px;
+            padding-right: 0 5%;
+
+            &>p {
+                height: 35%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 5rem;
+                border-bottom: 1px solid #52525B40;
+            }
+
+            &>div {
+                height: 65%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 5rem;
+                gap: 1rem;
+
+                &>ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    list-style: none;
+                    gap: 1rem;
+
+                    &>li {
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+
+                        &>span {
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+
+        .layout__always {
+            &>.always__a {
+                border-radius: 0;
+
+            }
+
+            &>.always__b {
+                &>p {
+                    padding: 0 1rem;
+                    overflow: hidden;
+                }
+
+                &>div {
+                    padding: 1rem;
+
+                    &>ul {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        list-style: none;
+                        gap: 1rem;
+                        width: 100%;
+
+                        &>li {
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+
+                            &>span {
+                                width: 32px;
+                                height: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 560px) {
+        .layout__always {
+            &>.always__a {
+                border-radius: 0 0 136px 136px;
+                padding: 0 5%;
+                & > .a__header{
+                    border-bottom: 0;
+                }
+            }
+
+            &>.always__b {
+                &>p {
+                    padding: 0 5%;
+                    overflow: hidden;
+
+                    border-bottom: 0;
+                    text-wrap: balance;
+                }
+
+                &>div {
+                    padding: 1rem;
+
+                    &>ul {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        list-style: none;
+                        gap: 1rem;
+                        width: 100%;
+
+                        &>li {
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+
+                            &>span {
+                                width: 32px;
+                                height: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
