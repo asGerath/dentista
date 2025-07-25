@@ -26,25 +26,23 @@ export class DoctorListComponent implements OnInit {
     private authService: AuthService
   ) {}
 
+
   ngOnInit(): void {
     this.doctorService.getDoctores().subscribe({
       next: (data) => {
         console.log('🩺 Lista recibida:', data);
         this.doctores = data.list;
         this.loading = false;
-        // Esperar al siguiente ciclo para asegurar que Angular renderizó
         setTimeout(() => this.initializeSwiper(), 0);
       },
       error: (err) => {
-        console.error('❌ Error al obtener doctores', err);
+        console.error('no cargan los doctores papu', err);
         this.loading = false;
       }
     });
   }
 
-  /**
-   * Inicializa Swiper una vez que el DOM y los datos están listos
-   */
+  /* Swiper*/
   private initializeSwiper(): void {
     const swiperEl = document.querySelector('swiper-container');
     if (swiperEl) {

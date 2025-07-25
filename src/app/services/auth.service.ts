@@ -24,11 +24,11 @@ export class AuthService {
 
     return this.http.post<any>(url, { correo }, { headers }).pipe(
   tap((response) => {
-    console.log('📨 Respuesta completa del login:', response);
+    console.log('Respuesta del auth:', response);
   }),
   map((response) => response?.uuid),
   tap((id) => {
-    console.log('✅ ID del candidato:', id);
+    console.log('id del candidato:', id);
     this.candidatoId = id;
     localStorage.setItem('ordCandidato', id);
   })

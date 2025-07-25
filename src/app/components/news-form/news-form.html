@@ -1,0 +1,22 @@
+<section class="layout__newsletter">
+
+    <div class="newsletter__content">
+
+        <header>
+            <h6 class="fz-42 c-white fw-600 ff-Iner">Subscribe to our newsletter</h6>
+        </header>
+
+        <form [formGroup]="form" (ngSubmit)="enviar()" class="newsletter__form">
+            
+            <input class="c-white" placeholder="First name" formControlName="nombre" type="text" />
+
+            <input class="c-white" placeholder="Email address" formControlName="correo" type="email" />
+
+            <button type="submit" [disabled]="form.invalid">
+                Subscribe Now
+            </button>
+        </form>
+
+        <p *ngIf="enviado">¡Gracias por suscribirte!</p>
+    </div>
+</section>

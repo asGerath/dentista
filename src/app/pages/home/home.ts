@@ -8,6 +8,7 @@ import { OurHistory } from '../../components/our-history/our-history';
 import { DoctorListComponent } from '../../components/meet-doctors/meet-doctors';
 import { TestimonySlider } from '../../components/testimony-slider/testimony-slider';
 import { CitaFormComponent } from '../../components/cita-form/cita-form';
+import { NewsletterFormComponent } from '../../components/news-form/news-form';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,7 @@ import { CitaFormComponent } from '../../components/cita-form/cita-form';
             AlwaysLough, KeyFeature, 
             YourSmile, OurHistory, 
             DoctorListComponent,TestimonySlider,
-          CitaFormComponent],
+            CitaFormComponent, NewsletterFormComponent],
   templateUrl: './home.html',
   styleUrl: './home.css'  
 })

@@ -35,7 +35,7 @@ export class CitaFormComponent implements OnInit {
 
     this.doctorService.getDoctores().subscribe({
   next: (res) => this.doctores = res.list,
-  error: (err) => console.error('Error al cargar doctores', err)
+  error: (err) => console.error('error al cargar doctores papu', err)
 });
 
 
@@ -48,12 +48,12 @@ export class CitaFormComponent implements OnInit {
 
     this.citaService.enviarCita(payload).subscribe({
       next: (res) => {
-        console.log('✅ Cita enviada:', res);
+        console.log('cita creada :', res);
         this.enviado = true;
         this.form.reset();
       },
       error: (err) => {
-        console.error('❌ Error al enviar cita', err);
+        console.error('error al enviar cita papu', err);
       }
     });
   }
