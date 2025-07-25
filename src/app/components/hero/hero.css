@@ -46,6 +46,7 @@
 
 @media screen and (max-width: 560px) {
 .layout__hBanner{
+     padding-top: 80px;
     & >header{   
         padding-right: 0; 
         gap: 1rem; 

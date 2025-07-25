@@ -5,12 +5,19 @@ import { AlwaysLough } from '../../components/always-lough/always-lough';
 import { KeyFeature } from '../../components/key-feature/key-feature';
 import { YourSmile } from '../../components/your-smile/your-smile';
 import { OurHistory } from '../../components/our-history/our-history';
+import { DoctorListComponent } from '../../components/meet-doctors/meet-doctors';
+import { TestimonySlider } from '../../components/testimony-slider/testimony-slider';
+import { CitaFormComponent } from '../../components/cita-form/cita-form';
 
 @Component({
   selector: 'app-home',
-  imports: [Hero, GetServices, AlwaysLough, KeyFeature, YourSmile, OurHistory],
+  imports: [Hero, GetServices, 
+            AlwaysLough, KeyFeature, 
+            YourSmile, OurHistory, 
+            DoctorListComponent,TestimonySlider,
+          CitaFormComponent],
   templateUrl: './home.html',
-  styleUrl: './home.css'
+  styleUrl: './home.css'  
 })
 export class Home {
 

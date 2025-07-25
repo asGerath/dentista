@@ -1,0 +1,30 @@
+<section class="layout__meetDoctors">
+    <div class="meetDoctors__container">
+        <header class="meetDoctors__header ff-Iner">
+            <h3 class="fz-48 fw-600">
+                Meet Some of Our <br class="keyFeature__headerBr" />
+                <span class="fw-700 fz-60 fw-700">Brains</span>
+            </h3>
+            <h4 class="fz-60">MEET OUR <span>DOCTORS</span></h4>
+            <span></span>
+        </header>
+        <div class="meetDoctors__sliders">
+            <swiper-container class="mySwiper" init="false">
+                <swiper-slide *ngFor="let doctor of doctores">
+                    <div class="sliders__slider">
+                        <figure>
+                            <img class="w-100" [src]="doctor.photo ? doctor.photo : defaultImg" alt="" />
+                        </figure>
+                        <h5 class="fz-20 ff-Iner c-black-t fw-400"> Dr {{ doctor.name }} </h5>
+                        <span class="c-Gray2"> {{ doctor.specialty }} </span>
+                        <span class="c-Gray2"> {{ doctor.university }} </span>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </div>
+</section>
+
+<ng-template #loading>
+    <p>Cargando doctores...</p>
+</ng-template>

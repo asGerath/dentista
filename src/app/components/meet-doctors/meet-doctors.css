@@ -1,0 +1,103 @@
+.layout__meetDoctors {
+    background-color: #F8FAFC;
+
+    &>.meetDoctors__container {
+        padding: 5rem 5%;
+        max-width: 1500px;
+
+        &>.meetDoctors__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            position: relative;
+
+            &>span {
+                position: absolute;
+                border-bottom: 1px solid #BCBCBC;
+                width: 80%;
+                right: 0;
+            }
+
+            &>h4 {
+                text-transform: uppercase;
+                padding-bottom: 1rem;
+
+                &>span {
+                    color: var(--Yellow);
+                }
+            }
+        }
+
+        &>.meetDoctors__sliders{
+            margin: 3rem auto;
+        }
+    }
+
+}
+
+.sliders__slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    & > figure{
+        width: 216px;
+        border-radius: 9999999999px;
+        overflow: hidden;
+        filter: grayscale(100%);
+    }
+}
+
+.swiper-button-next svg, .swiper-button-prev svg{
+    color: black !important;
+    background-color: black;
+}
+
+@media screen and (max-width: 991px) {
+    .layout__meetDoctors {
+        &>.meetDoctors__container {
+            &>.meetDoctors__header {
+                &>span {
+                    bottom: 0;
+                    width: 70%;
+                }
+
+                &>h4 {
+                    text-transform: uppercase;
+                    padding-bottom: 1rem;
+
+                    &>span {
+                        color: var(--Yellow);
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .layout__meetDoctors {
+        &>.meetDoctors__container {
+            &>.meetDoctors__header {
+                flex-direction: column;
+            &>h3,
+            h4 {
+                width: 100%;
+                text-align: center;
+            }
+            &>span {
+                bottom: 0;
+                width: 90%;
+                position: relative;
+                margin: 0 auto;
+            }
+            }
+        }
+    }
+}

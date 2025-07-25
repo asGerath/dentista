@@ -1,0 +1,60 @@
+<section class="layout__citaForm">
+    <header>
+        <h4 class="fz-56 fw-700">MAKE AN <span>APPOINMENT</span></h4>
+        <h3 class="fz-48 fw-600">
+            Consult with our <br class="header__oHistoryBr" />
+            <span class="fw-700 fz-60">Doctor</span>
+        </h3>
+        <span></span>
+    </header>
+
+    <div class="citaForm__container">
+        <div class="citaForm__container-a">
+            <figure>
+                <img class="w-100" src="/port-4.webp" alt="">
+            </figure>
+        </div>
+
+        
+        <div class="citaForm__container-b">
+            <form [formGroup]="form" (ngSubmit)="enviar()">
+                <div>
+                    <label class="c-black-t fw-400 fz-14" for="nombre">Name</label>
+                    <input class="c-Gray fz-16" id="nombre" placeholder="Full name" formControlName="nombre" type="text" />
+                </div>
+        
+                <div>
+                    <label class="c-black-t fw-400 fz-14" for="telefono">Phone</label>
+                    <input class="c-Gray fz-16" id="telefono" placeholder="55 5555 5555" formControlName="telefono" type="text" />
+                </div>
+        
+                <div>
+                    <label class="c-black-t fw-400 fz-14" for="fecha">Fecha</label>
+                    <input class="c-Gray fz-16" id="fecha" formControlName="fecha" type="date" />
+                </div>
+        
+                <div >
+                    <label class="c-black-t fw-400 fz-14" for="doctor">Doctor</label>
+                    <select class="c-Gray fz-16" id="doctor" formControlName="doctor">
+                        <option value="" disabled selected>Selecciona un doctor</option>
+                        <option *ngFor="let d of doctores" [value]="d.name">
+                            {{ d.name }}
+                        </option>
+                    </select>
+                </div>
+        
+                <div class="citaForm__textArea">
+                    <label class="c-black-t fw-400 fz-14 citaForm__textArea" for="mensaje">Message</label>
+                    <textarea placeholder="Include a message..." class="c-Gray fz-16" id="mensaje" formControlName="mensaje"></textarea>
+                </div>
+        
+                <button class="c-white" type="submit" [disabled]="form.invalid">Enviar</button>
+            </form>
+        
+            <div *ngIf="enviado" class="citaForm__success">
+                ¡Tu cita ha sido enviada con éxito!
+            </div>
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,29 @@
+<section class="layout__testimonials">
+
+    
+
+    <div class="testimonials__content">
+
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
+            space-between="30" autoplay-delay="2500" loop="true">
+            <swiper-slide *ngFor="let item of testimonialItems">
+                <div class="testimonials__slider">
+                    <div class="slider__figure">
+                        <figure class="figure__figure">
+                            <img class="w-100" [src]="item.img" alt="">
+                        </figure>
+                    </div>
+                    <header>
+                        <div>
+                            <h3 class="c-white ff-Iner fw-400 fz-36">What our client says about us</h3>
+                            <img src="/comillas.webp" alt="">
+                            <p class="fz-16 c-white ff-Iner fw-400">
+                                {{item.text}}
+                            </p>
+                        </div>
+                    </header>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</section>
